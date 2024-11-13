@@ -1,17 +1,17 @@
-grades = [[5, 3, 3, 5, 4], [2, 2, 2, 3], [4, 5, 5, 2], [4, 4, 3], [5, 5, 5, 4, 5]]
-students = {'Johnny', 'Bilbo', 'Steve', 'Khendrik', 'Aaron'}
+# "1st program"
+print('Задача 1 "Арифметика":')
+print((9 ** 0.5) * 5)
 
+# "2nd program"
+print('Задача 2 "Логика":')
+print(9.99 > 9.98 and 1000 != 1000.1)
 
-def get_aver_grade(students: set, grades: list) -> dict:
-    grades_of_students = {}
+# "3rd program"
+print('Задача 3 "Школьная загадка":')
+print(2 * 2 + 2)
+print(2 * (2 + 2))
+print((2 * 2 + 2) == (2 * (2 + 2)))
 
-    students = sorted(students)
-
-    for i in range(len(students)):
-        grades_of_students[students[i]] = sum(grades[i]) / len(grades[i])
-
-    return grades_of_students
-
-
-res = get_aver_grade(students, grades)
-print(res)
+# "4th program"
+print('Задача 4 "Первый после точки":')
+print(int(float('123.456') * 10) % 10)
