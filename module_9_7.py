@@ -2,7 +2,7 @@ def is_prime(func):
 # внутренняя функция wrapper в is_prime
     def wrapper(*args, ** kwargs):
         result = func(*args, ** kwargs)
-        sum_ = sum(args)
+        sum_ = func(*args)
         k = 0
         for i in range(2, sum_ // 2 + 1):
             if sum_ % i == 0:
